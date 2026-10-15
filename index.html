@@ -1,42 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>PS_ITC_26_0144 | Data Analyst - Accra</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bukari Masawudu | IT & Data Analyst - Accra</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body{font-family:Arial; margin:0; background:#f0f7ff; color:#0f2a5a}
-.header{background:#d6e8ff; padding:20px; display:flex; justify-content:space-between}
-.hero{display:flex; padding:40px; gap:30px}
-.card{background:white; padding:20px; border-radius:12px; margin:10px; box-shadow:0 2px 8px #ccc}
-.btn{background:#0f5dc0; color:white; padding:12px 20px; border-radius:20px; text-decoration:none}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#f8fafc;color:#0f172a}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 6%;background:white;position:sticky;top:0;box-shadow:0 1px 10px rgba(0,0,0,0.05);z-index:10}
+nav b{color:#2563eb;letter-spacing:1px}
+nav a{color:#2563eb;text-decoration:none;font-weight:600}
+.hero{display:grid;grid-template-columns:1.2fr 0.8fr;gap:20px;padding:60px 6%;align-items:center;background:linear-gradient(135deg,#dbeafe,#f0f9ff)}
+.hero h1{font-size:42px;line-height:1.1;color:#0f172a}
+.hero h1 span{color:#2563eb}
+.hero p{margin:16px 0;color:#475569;font-size:18px}
+.btn{display:inline-block;background:#2563eb;color:white;padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:600;margin-top:10px;box-shadow:0 4px 12px rgba(37,99,235,0.3)}
+.stats{display:flex;gap:20px;margin-top:20px}
+.stat{background:white;padding:14px 18px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);min-width:120px}
+.stat b{font-size:20px;color:#2563eb}
+.projects{padding:50px 6%;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:white;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.06);border:1px solid #e2e8f0;transition:0.3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.1)}
+.card h3{color:#0f172a;margin-bottom:8px}
+.tag{display:inline-block;background:#dbeafe;color:#1e40af;padding:4px 10px;border-radius:999px;font-size:12px;margin:4px 4px 0 0;font-weight:600}
+footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:30px 6%;margin-top:20px}
+footer a{color:#60a5fa}
+@media(max-width:768px){.hero{grid-template-columns:1fr}.hero h1{font-size:32px}.projects{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<div class="header"><b>PS_ITC_26_0144</b><a href="https://lnkd.in/p/e4JWVbfX">LinkedIn</a></div>
+<nav><b>PS_ITC_26_0144</b><a href="https://www.linkedin.com/in/bukarimasawudu">LinkedIn ↗</a></nav>
+
 <div class="hero">
 <div>
-<h1>IT Student • Data Analyst | Accra, Ghana</h1>
-<p>Building insights with Excel to drive smart decisions.</p>
-<a class="btn" href="#projects">View Projects</a>
+<h1>IT Student • <span>Data Analyst</span><br>Accra, Ghana</h1>
+<p>Building insights with Excel to drive smart decisions. Specializing in financial tracking & visualization.</p>
+<a href="#projects" class="btn">View Projects →</a>
+<div class="stats">
+<div class="stat"><b>GHS 6,635</b><br><small>Total Tracked</small></div>
+<div class="stat"><b>12+</b><br><small>Transactions</small></div>
+<div class="stat"><b>Excel</b><br><small>Expert Level</small></div>
 </div>
-<img src="https://i.imgur.com/8Km9tLL.png" width="400">
 </div>
-
-<div id="projects" style="display:flex; padding:20px">
-<div class="card">
-<h3>Expense Dashboard - GHS 6635</h3>
-<p>Monthly tracking with PivotTable, SUMIF. Total: GHS 6,635</p>
-<p><b>Skills:</b> Excel, Pivot, Data Cleaning</p>
-</div>
-<div class="card">
-<h3>Momo vs Cash Analysis</h3>
-<p>Comparative analysis of Mobile Money vs Cash - 62% Momo usage trend.</p>
-<p><b>Skills:</b> SUMIF, Charts, Insights</p>
+<div style="text-align:center">
+<div style="width:220px;height:220px;background:#2563eb;color:white;border-radius:30px;display:inline-flex;align-items:center;justify-content:center;font-size:70px;font-weight:700;box-shadow:0 20px 40px rgba(37,99,235,0.3)">BM</div>
+<p style="margin-top:12px;color:#64748b">Bukari Masawudu<br>Data Analyst Portfolio</p>
 </div>
 </div>
 
-<div style="text-align:center; padding:30px; background:#0f2a5a; color:white">
+<div id="projects" class="projects">
+<div class="card">
+<h3>📊 Expense Dashboard - GHS 6,635</h3>
+<p style="color:#475569;margin:10px 0">Monthly financial tracking with dynamic PivotTables, SUMIF formulas & interactive charts. Cleaned 12+ transactions.</p>
+<span class="tag">Excel</span><span class="tag">PivotTable</span><span class="tag">Data Cleaning</span><span class="tag">GHS Analysis</span>
+</div>
+<div class="card">
+<h3>💸 Momo vs Cash Analysis</h3>
+<p style="color:#475569;margin:10px 0">Comparative payment behavior study: 62% Cash vs 38% Momo. Revealed spending trends for budgeting.</p>
+<span class="tag">SUMIF</span><span class="tag">Charts</span><span class="tag">Insights</span><span class="tag">Mobile Money</span>
+</div>
+</div>
+
+<footer>
 <p>© 2026 PS_ITC_26_0144 • Accra • Built with Excel & Data Analytics</p>
-<p>LinkedIn: lnkd.in/p/e4JWVbfX</p>
-</div>
+<p style="margin-top:8px">LinkedIn: <a href="https://www.linkedin.com/in/bukarimasawudu">lnkd.in/p/e4JWVbfX</a> • GitHub: bukarimasawudu936-ops</p>
+</footer>
 </body>
 </html>
